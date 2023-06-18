@@ -29,6 +29,15 @@ export class DataService {
     await firstValueFrom(observable)
   }
 
+public async updateIsDone(taskId:number , ):Promise<void>{
+  const observable = this.http.patch(appConfig.tasksUrl+taskId ,{isDone:true})
+  await firstValueFrom(observable)
+}
+
+public async deleteTask(taskId:number):Promise<void>{
+  const observable = this.http.delete(appConfig.tasksUrl+taskId)
+  await firstValueFrom(observable)
+}
  
 
 }

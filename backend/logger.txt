@@ -24,3 +24,11 @@
 -------------------------------
 18.6.2023, 19:38:16 	 ER_BAD_FIELD_ERROR: Unknown column 'c.name' in 'field list'
 -------------------------------
+18.6.2023, 23:56:43 	 ER_BAD_FIELD_ERROR: Unknown column 'id' in 'where clause'
+-------------------------------
+19.6.2023, 0:05:40 	 Route /api/tasks2 not exist
+-------------------------------
+19.6.2023, 0:28:27 	 Route /api/tasks/5 not exist
+-------------------------------
+19.6.2023, 0:31:33 	 Route /api/tasks/5 not exist
+-------------------------------

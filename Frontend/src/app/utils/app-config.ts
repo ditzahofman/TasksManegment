@@ -1,6 +1,6 @@
 class AppConfig {
 
-    public tasksUrl = "http://localhost:3001/api/tasks"
+    public tasksUrl = "http://localhost:3001/api/tasks/"
     public customersUrl = "http://localhost:3001/api/customers"
 
 }

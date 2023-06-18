@@ -35,5 +35,26 @@ response.status(201).json(addTask)
     }
 })
 
+router.patch("/tasks/:taskId", async (request: Request, response: Response, next: NextFunction) => {
+    try {
+      const taskId = +request.params.taskId;
+      const updateTask = await logic.updateTask(taskId);
+      response.status(200).json(updateTask);
+    } catch (err: any) {
+      next(err);
+    }
+  });
+
+  router.delete("/tasks/:taskId", async (request: Request, response: Response, next: NextFunction) => {
+    try {
+      const taskId = +request.params.taskId;
+      const deleteTask = await logic.deleteTask(taskId)
+      response.sendStatus(204)
+    } catch (err: any) {
+      next(err);
+    }
+  });
+  
+
 
 export default router

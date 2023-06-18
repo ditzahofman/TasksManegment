@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 18, 2023 at 09:59 PM
+-- Generation Time: Jun 18, 2023 at 11:34 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -56,7 +56,7 @@ INSERT INTO `customers` (`customerId`, `customerName`, `occupation`, `phone`, `e
 CREATE TABLE `tasks` (
   `taskId` int(50) NOT NULL,
   `description` varchar(100) NOT NULL,
-  `date` date NOT NULL,
+  `date` varchar(50) NOT NULL,
   `customerId` int(11) NOT NULL,
   `isDone` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -66,12 +66,12 @@ CREATE TABLE `tasks` (
 --
 
 INSERT INTO `tasks` (`taskId`, `description`, `date`, `customerId`, `isDone`) VALUES
-(1, 'Send fax', '0000-00-00', 1, 0),
-(2, 'Call the customer in two days', '0000-00-00', 1, 0),
-(3, 'send a thank you letter', '0000-00-00', 2, 0),
-(4, 'Send a tax invoice', '0000-00-00', 4, 0),
-(5, 'Request for cash payment', '0000-00-00', 3, 0),
-(6, 'Send fax', '0000-00-00', 2, 0);
+(1, 'Send Employes ', '19.6.2023', 3, 1),
+(2, 'Send fax', '19.6.2023', 1, 0),
+(3, 'send a thank you letter', '19.6.2023', 2, 0),
+(4, 'Send a fax to the customer', '19.6.2023', 4, 0),
+(6, 'Send fax', '19.6.2023', 3, 0),
+(25, 'Update the account', '19.6.2023', 2, 0);
 
 --
 -- Indexes for dumped tables
@@ -104,7 +104,7 @@ ALTER TABLE `customers`
 -- AUTO_INCREMENT for table `tasks`
 --
 ALTER TABLE `tasks`
-  MODIFY `taskId` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `taskId` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- Constraints for dumped tables

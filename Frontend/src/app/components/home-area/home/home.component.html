@@ -11,10 +11,13 @@
     <tr *ngFor="let t of tasks">
         <td>{{t.description}}</td>
         <td>{{t.customerName}}</td>
-        <td>{{t.date | date: 'dd/MM/yyyy'}}</td>
-        <td *ngIf="t.isDone">Done</td>
-        <td *ngIf="!t.isDone">Not Done</td>
-        <td><button ><b>x</b></button></td>
+        <td>{{t.date }}</td>
+        <td>
+            <input type="checkbox" (click)="updateIsDone(t.taskId)" [checked]="t.isDone">
+          </td>
+        <!-- <td *ngIf="t.isDone">Done</td>
+        <td *ngIf="!t.isDone">Not Done</td> -->
+        <td><button (click)="deleteMe(t.taskId)"><b>x</b></button></td>
     </tr>
    
 </table>
