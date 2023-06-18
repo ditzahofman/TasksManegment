@@ -13,7 +13,7 @@ export class AddComponent implements OnInit {
   public task=new TaskModel()
   public customer:CustomerModel[]=[]
   
-  public constructor(private dataService:DataService, router:Router){}
+  public constructor(private dataService:DataService,public router:Router){}
   
   
 public async ngOnInit():Promise <void> {
@@ -27,7 +27,7 @@ public async ngOnInit():Promise <void> {
     try {
       await this.dataService.addTask(this.task) 
       alert("The gift has been successfully added")
-     
+      this.router.navigateByUrl("/home")
     } catch (error:any) {
       alert(error.message)
     }
