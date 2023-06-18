@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 18, 2023 at 07:47 PM
+-- Generation Time: Jun 18, 2023 at 08:04 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -70,9 +70,11 @@ INSERT INTO `tasks` (`taskId`, `description`, `date`, `customerId`, `isDone`) VA
 (2, 'Refund', '2023-06-20', 1, 0),
 (3, 'Unloading goods', '2023-06-13', 3, 0),
 (4, 'Sending thank you letters', '2023-06-27', 3, 0),
-(5, 'nnnnnnnnnnn', '2023-06-06', 1, 0),
 (6, 'send message', '2023-06-18', 2, 1),
-(7, 'Send a fax to the customer', '2023-06-14', 1, 0);
+(7, 'Send a fax to the customer', '2023-06-14', 1, 0),
+(8, 'Call the customer in two days', '2023-06-20', 2, 1),
+(9, 'call the customer', '2023-06-29', 3, 0),
+(10, 'send message', '2023-06-20', 3, 0);
 
 --
 -- Indexes for dumped tables
@@ -105,7 +107,7 @@ ALTER TABLE `customers`
 -- AUTO_INCREMENT for table `tasks`
 --
 ALTER TABLE `tasks`
-  MODIFY `taskId` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `taskId` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- Constraints for dumped tables
