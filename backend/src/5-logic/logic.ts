@@ -34,13 +34,14 @@ async function getAllTasksByCustomer(customerId:number): Promise<TaskModel[]> {
 }
 
 async function addTask(task:TaskModel):Promise<TaskModel>{
+    const now = new Date().toLocaleDateString()
     const sql = `INSERT INTO tasks VALUES(DEFAULT,?,?,?,?)
     `
     const info:OkPacket =await dal.execute(sql,[
         task.description,
-        task.date,
+        task.date = now,
         task.customerId,
-        task.isDone
+        task.isDone=false
     ])
 
     task.taskId = info.insertId

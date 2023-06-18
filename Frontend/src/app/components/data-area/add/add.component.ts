@@ -26,7 +26,7 @@ public async ngOnInit():Promise <void> {
   public async send():Promise<void>{
     try {
       await this.dataService.addTask(this.task) 
-      alert("The gift has been successfully added")
+      alert("The task has been successfully added")
       this.router.navigateByUrl("/home")
     } catch (error:any) {
       alert(error.message)

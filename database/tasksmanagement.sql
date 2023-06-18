@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 18, 2023 at 08:04 PM
+-- Generation Time: Jun 18, 2023 at 09:59 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -66,15 +66,12 @@ CREATE TABLE `tasks` (
 --
 
 INSERT INTO `tasks` (`taskId`, `description`, `date`, `customerId`, `isDone`) VALUES
-(1, 'send an invoice', '2023-06-19', 2, 1),
-(2, 'Refund', '2023-06-20', 1, 0),
-(3, 'Unloading goods', '2023-06-13', 3, 0),
-(4, 'Sending thank you letters', '2023-06-27', 3, 0),
-(6, 'send message', '2023-06-18', 2, 1),
-(7, 'Send a fax to the customer', '2023-06-14', 1, 0),
-(8, 'Call the customer in two days', '2023-06-20', 2, 1),
-(9, 'call the customer', '2023-06-29', 3, 0),
-(10, 'send message', '2023-06-20', 3, 0);
+(1, 'Send fax', '0000-00-00', 1, 0),
+(2, 'Call the customer in two days', '0000-00-00', 1, 0),
+(3, 'send a thank you letter', '0000-00-00', 2, 0),
+(4, 'Send a tax invoice', '0000-00-00', 4, 0),
+(5, 'Request for cash payment', '0000-00-00', 3, 0),
+(6, 'Send fax', '0000-00-00', 2, 0);
 
 --
 -- Indexes for dumped tables
@@ -107,7 +104,7 @@ ALTER TABLE `customers`
 -- AUTO_INCREMENT for table `tasks`
 --
 ALTER TABLE `tasks`
-  MODIFY `taskId` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `taskId` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- Constraints for dumped tables
