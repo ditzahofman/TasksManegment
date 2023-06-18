@@ -1,0 +1,21 @@
+<div>
+<table *ngIf="tasks.length>0" >
+    <tr>
+        
+        <th>Description</th>
+        <th>Date</th>
+        <th>customerName</th>
+        <th>isDone</th>
+        <th>Delete</th>
+    </tr>
+    <tr *ngFor="let t of tasks">
+        <td>{{t.description}}</td>
+        <td>{{t.customerName}}</td>
+        <td>{{t.date | date: 'dd/MM/yyyy'}}</td>
+        <td *ngIf="t.isDone">Done</td>
+        <td *ngIf="!t.isDone">Not Done</td>
+        <td><button ><b>x</b></button></td>
+    </tr>
+   
+</table>
+</div>

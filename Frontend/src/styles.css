@@ -1,0 +1,13 @@
+html, body {
+    height: 100%;
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: large;
+   background-image: linear-gradient( rgb(26, 104, 92) ,rgb(250, 241, 241),rgb(32, 152, 160));
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+}

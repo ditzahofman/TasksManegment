@@ -1,0 +1,12 @@
+table{
+    position: relative;
+       z-index: 1000;
+       width: 100%;
+       margin-left: 30%;
+}
+
+table ,th, td, tr{
+    border: solid white 4px;
+    background-color:rgb(96, 172, 177);
+    width:500px ;
+}

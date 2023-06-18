@@ -1,0 +1,26 @@
+16.4.2023, 18:27:11 	 Route / not exist
+-------------------------------
+16.4.2023, 18:27:11 	 Route /favicon.ico not exist
+-------------------------------
+18.6.2023, 19:06:31 	 Route /api/customers not exist
+-------------------------------
+18.6.2023, 19:07:39 	 ER_BAD_DB_ERROR: Unknown database 'taskmanagement'
+-------------------------------
+18.6.2023, 19:09:27 	 Route /api/tasks not exist
+-------------------------------
+18.6.2023, 19:10:51 	 Route /api/tasks not exist
+-------------------------------
+18.6.2023, 19:26:34 	 Unexpected end of JSON input
+-------------------------------
+18.6.2023, 19:26:39 	 Unexpected end of JSON input
+-------------------------------
+18.6.2023, 19:27:23 	 Unexpected end of JSON input
+-------------------------------
+18.6.2023, 19:37:51 	 ER_BAD_FIELD_ERROR: Unknown column 'c.name' in 'field list'
+-------------------------------
+18.6.2023, 19:38:10 	 ER_BAD_FIELD_ERROR: Unknown column 'c.name' in 'field list'
+-------------------------------
+18.6.2023, 19:38:12 	 ER_BAD_FIELD_ERROR: Unknown column 'c.name' in 'field list'
+-------------------------------
+18.6.2023, 19:38:16 	 ER_BAD_FIELD_ERROR: Unknown column 'c.name' in 'field list'
+-------------------------------
